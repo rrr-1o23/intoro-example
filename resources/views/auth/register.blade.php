@@ -23,12 +23,12 @@
             <x-input-error :messages="$errors->get('description')" class="mt-2" />
         </div>
 
-        <!-- プロフィール画像 -->
+        <!-- プロフィール画像 
         <div class="mt-4">
             <x-input-label for="profile_picture" :value="__('Profile Picture')" />
             <input id="profile_picture" class="block mt-1 w-full" type="file" name="profile_picture" accept="image/*" required />
             <x-input-error :messages="$errors->get('profile_picture')" class="mt-2" />
-        </div>
+        </div> -->
 
         <!-- パスワード -->
         <div class="mt-4">
