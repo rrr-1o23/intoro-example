@@ -56,7 +56,15 @@
         </div>
     </main>
     <footer class="bg-gray-900 text-white text-center p-4">
-        <p>© {!! date('Y') !!} AISuperChat Service. All rights reserved.</p>
+        <p>© {!! date('Y') !!} AI SuperChat Service. All rights reserved.</p>
+        <p>Registered {{$usernames->count()}} Users<br>↓</p>
+        <div class="flex flex-wrap justify-center">
+            @foreach($usernames as $username)
+            <div class="mr-4">
+                {{$username}}
+            </div>
+            @endforeach
+        </div>
     </footer>
     </body>
 </html>
